@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Metadatos del Website-->
+    <meta charset="UTF-8" />
+    <meta name="author" content="Juan Carlos Garcés" />
+    <meta name="description" content="Proyecto del Módulo 2" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Titulo del Website-->
+    <title>Desarrollo CRUD proyecto Módulo 2</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="" />
+    <!--Link de referencia Bootsrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <!--Link de referencia CSS-->
+    <link rel="stylesheet" href="estilos/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="encabezado">
+        <h1>ContApp List</h1>
+        <p>
+          ¡Con ContApp List puedes ingresar, editar y buscar los datos de tus
+          contactos preferidos!
+        </p>
+      </div>
+    </header>
+    <main class="cuerpo">
+      <!-- Aquí esta la sección para AGREGAR un contacto en nuestra lista de ContApp List -->
+      <h3>Agregar contacto</h3>
+      <section>
+        <form id="agregarContacto">
+          <label for="nombreInput">Nombre:</label>
+          <input type="text" class="nombre" id="nombreInput" name="nombreInput"/><br />
+
+          <label for="telefonoInput">Teléfono:</label>
+          <input type="text" class="telefono" id="telefonoInput" name="telefonoInput"/><br />
+
+          <button onclick="agregarContacto()" type="submit" class="agregar" id="btnAgregar">Agrégalo</button>
+        </form>
+      </section>
+      <!-- Aquí esta la sección para EDITAR un contacto en nuestra lista de ContApp List -->
+      <h3>Editar contacto</h3>
+      <section>
+        <form id="editarContacto">
+          <label for="editarNombreInput">Nombre:</label>
+          <input type="text" id="editarNombreInput" name="editarNombreInput" /><br />
+
+          <label for="editarTelefonoInput">Teléfono:</label>
+          <input type="text" id="editarTelefonoInput" name="editarTelefonoInput" /><br />
+
+          <button type="submit" class="editar" id="btnEditar">¡Edítalo!</button>
+        </form>
+      </section>
+      <section>
+        <div class="listadoDeContactos">
+          <section class="nuevoContacto">
+            <p>Nombre</p>
+            <p>Teléfono</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill icono" viewBox="0 0 16 16">
+              <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+            </svg>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h6>
+        Todos los derechos reservados ContApp List 2023 - Creado con amor por
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          color="purple"
+          height="16"
+          fill="currentColor"
+          class="bi bi-heart-fill"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+        </svg>
+        <a href="https://marianaguadalupe.com" target="_blank">Mariana Guadalupe / Marketing Integrado</a>
+      </h6>
+    </footer>
+    <script src="funciones.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
