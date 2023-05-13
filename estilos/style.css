@@ -1,0 +1,124 @@
+*,::after, *::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flexbox;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  text-align: center;
+  align-items: center;
+}
+
+.encabezado {
+  background-color: rgba(137, 43, 226, 0.8);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.encabezado h1 {
+  text-align: center;
+  color:#ffffff;
+}
+
+.encabezado p {
+  color: #ffffff;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.cuerpo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../imagenes/fondo_azul_2.png);
+  background-size: cover;
+  
+}
+
+.cuerpo h3 {
+  color: rgb(137, 43, 226);
+}
+
+#agregarContacto {
+  margin: 20px auto;
+  width: 300px;
+}
+
+#agregarContacto label {
+  display: block;
+
+}
+
+#agregarContacto input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#agregarContacto button[type="submit"] {
+  background-color: rgba(137, 43, 226, 0.5);
+  display: flexbox;
+  margin-top: 10px;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+}
+
+#editarContacto {
+  margin: 20px auto;
+  width: 300px;
+}
+
+#editarContacto label {
+  display: block;
+}
+
+#editarContacto input[type="text"] {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#editarContacto button[type="submit"] {
+  background-color: rgba(137, 43, 226, 0.5);
+  display: flexbox;
+  margin-top: 10px;
+  color: #ffffff;
+  padding: 5px 10px 5px 10px;
+}
+
+.listaDeContactos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.nuevoContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  height: 25px;
+  margin: 20px auto;
+  color: rgb(137, 43, 226);
+}
+
+.icono {
+  color: black;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgba(137, 43, 226, 0.8);
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+footer h6 {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
