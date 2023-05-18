@@ -1,20 +1,20 @@
-const contacts = [];
+/* Declaramos nuestras variables de los formularios */
+const nombre = document.getElementsByClassName(".nombre");
+const telefono = document.getElementsByClassName(".telefono");
+const listadoDeContactos = document.getElementsByClassName(".listadoDeContactos");
+const baseDeDatos = window.localStorage;
 
-function renderContacts() {
-  const contactsTableBody = document.querySelector("#contactsTable tbody");
-  contactsTableBody.innerHTML = "";
-}
-contacts.forEach((contact) => {
-  const row = document.createElement("tr");
-  row.innerHTML = `
-			<td>${contact.name}</td>
-			<td>${contact.phone}</td>
-			<td>
-				<button class="editButton" data-id="${contact.id}">Editar</button>
-				<button class="deleteButton" data-id="${contact.id}">Eliminar</button>
-			</td>
-		`;
-  contactsTableBody.appendChild(row);
-});
+/* Declaramos las variables de los botones */
+const btnAgregarContacto = document.getElementsByClassName(".agregar");
+const btnEditarContacto = document.getElementsByClassName(".editar");
 
-// Falta añadir los event listeners a los botones de agregar contacto, guardar cambios y buscar.
+/*btnAgregarContacto.onclick = () => {
+	let contacto = {
+	id: Math.random(1, 100),
+	nombre: nombre.value,
+	telefono: telefono.value,
+	}
+	guardarContacto(baseDeDatos, contacto)
+}*/
+
+subirContactos(baseDeDatos);
